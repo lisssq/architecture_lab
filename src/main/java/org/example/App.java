@@ -11,9 +11,9 @@ public class App {
                         (new Commands(Tasks.mul)),
                         (new Commands(Tasks.st, "r4", 4)),
                         (new Commands(Tasks.ld, "r3", 4)),
-
                         (new Commands(Tasks.mv, "r1", "r2")),
                         (new Commands(Tasks.print))
+
 //                (new Commands(Tasks.ld, "r1",2)),
 //                (new Commands(Tasks.ld,"r2",0)),
 //                (new Commands(Tasks.add)),
