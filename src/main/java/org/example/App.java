@@ -1,9 +1,11 @@
 package org.example;
 
-public class App {
-    public static void main(String[] args) {
+public class App
+{
+    public static void main(String[] args)
+    {
         Commands prog[] =
-                {   //это массив
+                {
                         (new Commands(Tasks.init, 2, 20)),
                         (new Commands(Tasks.init, 3, 30)),
                         (new Commands(Tasks.ld, "r1", 3)),
@@ -26,10 +28,11 @@ public class App {
 //                (new Commands(Tasks.print)),
                 };
 
-        ICpu cpu = BCpu.build();
-        for (int i = 0; i < prog.length; i++)
-        {
-            cpu.execute(prog[i]);
+        ICpu cpu = BCpu.build();        // создать новый процессор
+        //ICpu cpu = new CPU();
+
+        for (Commands commands : prog) {
+            cpu.doCommand(commands);
         }
     }
 }

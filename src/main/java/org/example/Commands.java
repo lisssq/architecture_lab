@@ -1,12 +1,13 @@
 package org.example;
 
-public class Commands {
+public class Commands
+{
     Tasks t;
     int index_memory;
     int figure; //число которое мы передаем
     String register, register_dop;
 
-    CPU c = new CPU();      //экземпляр процессора для команд
+    //CPU c = new CPU();      //экземпляр процессора для команд
 
     public Tasks getTasks()
     {

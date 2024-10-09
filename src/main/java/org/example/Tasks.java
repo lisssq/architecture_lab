@@ -9,6 +9,6 @@ public enum Tasks
     div,
     mul,
     print,
-    mv,
+    mv,  //копирование значения из одного регистра в другой.
     init
 }
